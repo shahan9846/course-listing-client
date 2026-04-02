@@ -1,0 +1,163 @@
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    font-family: 'Poppins';
+    background: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.auth-left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-name {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+}
+
+.brand-name span {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.auth-left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.auth-left-content h2 {
+    font-family: 'Poppins';;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 70px;
+}
+
+.auth-left-content span {
+    color: var(--primary-color);
+}
+
+.auth-left-content p {
+    font-size: 17px;
+    max-width: 500px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: gray;
+}
+
+.auth-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-box h1 {
+    font-family: 'Poppins';;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #f0ede8;
+}
+
+.auth-box .auth-sub-title {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 36px;
+}
+
+.auth-box .auth-sub-title a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.field input {
+    width: 100%;
+    padding: 13px 16px;
+    background: rgb(23 22 1 / 50%);
+    border: 1px solid #1f1f30;
+    border-radius: 10px;
+    color: #f0ede8;
+    font-size: 14px;
+    font-family: 'Poppins';
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+.field input::placeholder {
+    color: gray;
+}
+
+.field input:focus {
+    border-color: rgb(221 217 163 / 50%);;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    cursor: pointer;
+    margin-top: 8px;
+    transition: opacity 0.2s, transform 0.1s;
+    letter-spacing: 0.01em;
+    background-color: var(--primary-color);
+}
+
+.auth-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.auth-btn:active {
+    transform: translateY(0);
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 768px) {
+    .auth-left {
+        display: none;
+    }
+
+    .auth-right {
+        padding: 32px 24px;
+    }
+}

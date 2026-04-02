@@ -1,0 +1,153 @@
+.form-container {
+  padding: 30px;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Poppins';
+}
+
+.back-link {
+  padding: 10px 0;
+  background: transparent;
+  color: gray;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+  letter-spacing: .5px;
+  border: none;
+}
+
+.back-link:hover {
+  color: rgb(92, 92, 92);
+}
+
+.course-form {
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #141416;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.course-form label,
+.form-field label,
+.form-row label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+
+
+.course-form input,
+.course-form select,
+.course-form textarea {
+  background: #1c1c1f;
+  border: 1px solid #2a2a2f;
+  border-radius: 3px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: white;
+  outline: none;
+  width: 100%;
+  font-family: 'Poppins';
+
+}
+
+.course-form input::placeholder,
+.course-form textarea::placeholder {
+  font-family: 'Poppins';
+}
+
+.course-form input:focus,
+.course-form select:focus,
+.course-form textarea:focus {
+  background: #1e1e1e;
+  border: 1px solid var(--primary-color);
+}
+
+.select-wrap {
+  position: relative;
+}
+
+.course-form select {
+  cursor: pointer;
+}
+
+.course-form select option {
+  background: #1a1a1a;
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+
+}
+
+.cancel-btn {
+  padding: 11px 24px;
+  background-color: black;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  letter-spacing: 0.02em;
+  font-family: 'Poppins';
+
+}
+
+.submit-btn {
+  padding: 11px 28px;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 3px;
+  color: #0d0d0d;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Poppins';
+
+}
+
+.submit-btn:hover {
+  background: black;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: 0.4s;
+}
+
+.cancel-btn:hover{
+  background-color: rgb(29, 29, 29);
+}

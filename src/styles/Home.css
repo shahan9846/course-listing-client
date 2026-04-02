@@ -1,0 +1,242 @@
+.app-layout {
+    min-height: 100vh;
+    background: #000000;
+    color: #f0ede8;
+}
+
+.courses-section {
+    padding: 30px;
+}
+
+.courses-section-heading {
+    margin: 50px 0;
+    font-family: sans-serif;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.courses-section-heading span {
+    color: var(--primary-color);
+}
+
+.courses-section-heading h1 {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 70px;
+}
+
+.courses-section-heading p {
+    font-size: 17px;
+    max-width: 500px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: gray;
+}
+
+
+.courses-section-heading button {
+    padding: 13px 30px;
+    background-color: var(--primary-color);
+    color: #07090f;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Poppins';
+    max-width: 200px;
+}
+
+.all-course-list {
+    margin: 30px 0;
+    border-top: 1px solid rgb(62, 62, 62);
+    padding: 50px 0;
+}
+
+.search-course-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-btn-home:hover {
+    font-size: 17px;
+    transition: .4s;
+}
+
+.search-course-wrap input {
+    border: none;
+    background: transparent;
+    padding: 11px 16px;
+    font-size: 14px;
+    color: var(--text);
+    outline: none;
+    border: 1px solid var(--primary-color);
+    /* border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; */
+    border-radius: 10px;
+    font-family: 'Poppins';
+    min-width: 300px;
+}
+
+
+.search-course-btn {
+    padding: 13px 16px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #07090f;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Poppins';
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search-course-btn:hover {
+    background-color: #b69a37;
+    transition: .4s;
+}
+
+.course-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.add-btn-home {
+    padding: 11px 22px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--border);
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    font-family: "Poppins";
+    transition: border-color .2s;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.course-card {
+    background: #000000;
+    border: 1px solid rgb(42 42 1);
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: 'Poppins';
+    cursor: pointer;
+
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    border-color: #898b00;
+}
+
+
+.card-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text);
+    margin-bottom: 8px;
+    font-family: 'Syne', sans-serif;
+}
+
+.card-category {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+
+}
+
+.card-instructor {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 12px;
+}
+
+.card-desc {
+    font-size: 13px;
+    color: gray;
+    line-height: 1.65;
+    margin-bottom: 6px;
+    overflow-wrap: break-word;
+}
+
+.card-duration {
+    font-size: 12px;
+    color: var(--muted);
+    font-family: '';
+    margin-top: 10px;
+    font-family: 'Poppins';
+}
+
+
+.filterd-courses{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+
+.filterd-courses button {
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid gray;
+    font-size: 12px;
+    transition: all 0.15s;
+    color: gray;
+}
+
+.filterd-courses button:hover {
+    background-color: rgba(232, 197, 71, 0.15);
+    border-color: #e8c547;
+    color: #e8c547;
+}
+
+.active-filter {
+    background-color: #e8c547 !important;
+    color: black !important;
+    border-color: #e8c547 !important;
+}
+
+
+.card-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.card-actions button {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
+
